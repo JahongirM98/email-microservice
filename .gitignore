@@ -1,0 +1,43 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environment
+venv/
+.env
+
+# PyCharm
+.idea/
+
+# VSCode
+.vscode/
+
+# SQLite (если вдруг временно используешь)
+db.sqlite3
+
+# Logs
+*.log
+
+# OS / system
+.DS_Store
+Thumbs.db
+
+# Docker
+*.pid
+*.sock
+
+# pytest cache
+.pytest_cache/
+
+# coverage reports
+htmlcov/
+coverage.xml
+*.cover
+*.py,cover
+
+# mypy
+.mypy_cache/
+
+# compiled C files
+*.so
