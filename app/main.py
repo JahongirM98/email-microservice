@@ -1,9 +1,6 @@
-from fastapi import FastAPI, Depends
-from sqlalchemy.ext.asyncio import AsyncSession
-from app.database import get_db
+from fastapi import FastAPI
+from app.api.routes_email import router as email_router
 
 app = FastAPI()
 
-@app.get("/")
-async def root(db: AsyncSession = Depends(get_db)):
-    return {"message": "Connection to DB successful!"}
+app.include_router(email_router, prefix="/emails", tags=["Emails"])
